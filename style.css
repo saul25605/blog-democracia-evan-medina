@@ -1,0 +1,1284 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252525;
+    background: #f7f8fc;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   VARIABLES DE COLOR
+===================================================== */
+
+:root {
+
+    --azul: #2563eb;
+    --azul-oscuro: #172554;
+
+    --turquesa: #06b6a4;
+    --turquesa-claro: #ccfbf1;
+
+    --amarillo: #fbbf24;
+    --amarillo-claro: #fef3c7;
+
+    --coral: #f97360;
+    --coral-claro: #ffe4df;
+
+    --morado: #7c3aed;
+    --morado-claro: #ede9fe;
+
+    --verde: #16a34a;
+    --verde-claro: #dcfce7;
+
+    --gris: #f1f5f9;
+
+    --texto: #252525;
+
+}
+
+
+/* =====================================================
+   HERO / PORTADA
+===================================================== */
+
+.hero {
+
+    min-height: 90vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, .72),
+            rgba(124, 58, 237, .68),
+            rgba(6, 182, 164, .55)
+        ),
+        url("images/democracia.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    position: relative;
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 28px 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+.logo span {
+
+    color: var(--amarillo);
+
+    font-weight: normal;
+
+}
+
+
+.menu {
+
+    display: flex;
+
+    gap: 25px;
+
+    list-style: none;
+
+}
+
+.menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+}
+
+.menu a:hover {
+
+    background: rgba(255,255,255,.20);
+
+    color: var(--amarillo);
+
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.hero-content {
+
+    max-width: 900px;
+
+    margin: 160px auto 0;
+
+    padding: 30px;
+
+    text-align: center;
+
+}
+
+.categoria {
+
+    display: inline-block;
+
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    background: var(--amarillo);
+
+    color: #222;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+}
+
+.hero h1 {
+
+    font-size: clamp(65px, 11vw, 130px);
+
+    line-height: 1;
+
+    margin: 25px 0;
+
+    text-shadow:
+        0 8px 30px rgba(0,0,0,.2);
+
+}
+
+.hero p {
+
+    font-size: 20px;
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+.btn {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 15px 32px;
+
+    background: var(--amarillo);
+
+    color: #222;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+
+}
+
+.btn:hover {
+
+    transform: translateY(-5px);
+
+    background: white;
+
+    color: var(--azul);
+
+}
+
+
+/* =====================================================
+   SECCIONES GENERALES
+===================================================== */
+
+section {
+
+    padding: 110px 8%;
+
+}
+
+.section-title {
+
+    max-width: 850px;
+
+    margin: 0 auto 65px;
+
+}
+
+.section-title span {
+
+    display: inline-block;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    color: var(--azul);
+
+    background: #dbeafe;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+}
+
+.section-title h2 {
+
+    font-size: clamp(38px, 5vw, 62px);
+
+    line-height: 1.1;
+
+    margin-top: 18px;
+
+    color: var(--azul-oscuro);
+
+}
+
+.section-title p {
+
+    margin-top: 20px;
+
+}
+
+
+/* =====================================================
+   DEFINICIÓN
+===================================================== */
+
+.intro {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eff6ff
+        );
+
+}
+
+.two-columns {
+
+    max-width: 1100px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    margin: auto;
+
+}
+
+.lead {
+
+    font-size: 25px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+
+    color: var(--azul-oscuro);
+
+}
+
+.quote {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--morado),
+            var(--azul)
+        );
+
+    padding: 55px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    color: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 40px rgba(37,99,235,.20);
+
+}
+
+.quote span {
+
+    color: var(--amarillo);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+.quote blockquote {
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    line-height: 1.4;
+
+    margin-top: 20px;
+
+}
+
+
+/* =====================================================
+   IMAGEN DESTACADA
+===================================================== */
+
+.featured-image {
+
+    position: relative;
+
+    padding: 0;
+
+    border-top: 8px solid var(--turquesa);
+
+    border-bottom: 8px solid var(--coral);
+
+}
+
+.featured-image img {
+
+    width: 100%;
+
+    height: 550px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.image-caption {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    padding: 50px 8%;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(23,37,84,.95)
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.image-caption strong {
+
+    font-size: 28px;
+
+    color: var(--amarillo);
+
+}
+
+
+/* =====================================================
+   CARACTERÍSTICAS
+===================================================== */
+
+.features {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fefce8,
+            #ecfeff
+        );
+
+}
+
+.cards {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 40px;
+
+    min-height: 290px;
+
+    border-radius: 18px;
+
+    border-top: 6px solid var(--azul);
+
+    transition: .3s;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.card:nth-child(2) {
+
+    border-color: var(--turquesa);
+
+}
+
+.card:nth-child(3) {
+
+    border-color: var(--coral);
+
+}
+
+.card:nth-child(4) {
+
+    border-color: var(--morado);
+
+}
+
+.card:nth-child(5) {
+
+    border-color: var(--amarillo);
+
+}
+
+.card:nth-child(6) {
+
+    border-color: var(--verde);
+
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.number {
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    color: var(--azul);
+
+    opacity: .25;
+
+}
+
+.card h3 {
+
+    margin: 20px 0 12px;
+
+    font-size: 22px;
+
+    color: var(--azul-oscuro);
+
+}
+
+
+/* =====================================================
+   PAÍSES
+===================================================== */
+
+.countries {
+
+    background: white;
+
+}
+
+.country-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+
+}
+
+.country {
+
+    background: white;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    transition: .3s;
+
+}
+
+.country:nth-child(1) {
+
+    border-bottom: 6px solid var(--azul);
+
+}
+
+.country:nth-child(2) {
+
+    border-bottom: 6px solid var(--coral);
+
+}
+
+.country:nth-child(3) {
+
+    border-bottom: 6px solid var(--amarillo);
+
+}
+
+.country:nth-child(4) {
+
+    border-bottom: 6px solid var(--turquesa);
+
+}
+
+.country:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.country img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.country-content {
+
+    padding: 30px;
+
+}
+
+.country-content span {
+
+    font-size: 30px;
+
+}
+
+.country h3 {
+
+    font-size: 26px;
+
+    margin: 8px 0;
+
+    color: var(--azul-oscuro);
+
+}
+
+
+/* =====================================================
+   HISTORIA
+===================================================== */
+
+.history {
+
+    background:
+        linear-gradient(
+            135deg,
+            #172554,
+            #312e81,
+            #581c87
+        );
+
+    color: white;
+
+}
+
+.history .section-title h2 {
+
+    color: white;
+
+}
+
+.history .section-title span {
+
+    background: var(--amarillo);
+
+    color: #222;
+
+}
+
+.history-intro {
+
+    max-width: 1100px;
+
+    margin: auto auto 90px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+.history-intro img {
+
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 6px solid var(--amarillo);
+
+}
+
+.history-intro p {
+
+    margin-bottom: 20px;
+
+}
+
+.timeline {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+.timeline-item {
+
+    border-left: 3px solid var(--turquesa);
+
+    padding:
+        0
+        0
+        55px
+        45px;
+
+    position: relative;
+
+}
+
+.timeline-item::before {
+
+    content: "";
+
+    width: 17px;
+
+    height: 17px;
+
+    background: var(--amarillo);
+
+    border: 4px solid var(--turquesa);
+
+    position: absolute;
+
+    left: -11px;
+
+    top: 2px;
+
+    border-radius: 50%;
+
+}
+
+.timeline-item span {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: var(--amarillo);
+
+    font-weight: bold;
+
+}
+
+.timeline-item h3 {
+
+    font-size: 30px;
+
+    margin: 10px 0;
+
+}
+
+
+/* =====================================================
+   PROBLEMÁTICAS
+===================================================== */
+
+.problems {
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #fef2f2
+        );
+
+}
+
+.problem {
+
+    max-width: 1100px;
+
+    margin: 0 auto 100px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+.problem.reverse {
+
+    direction: rtl;
+
+}
+
+.problem.reverse .problem-content {
+
+    direction: ltr;
+
+}
+
+.problem-image {
+
+    position: relative;
+
+}
+
+.problem-image img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+}
+
+.problem-image span {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 20px;
+
+    width: 65px;
+
+    height: 65px;
+
+    background: var(--coral);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 10px 20px rgba(249,115,96,.3);
+
+}
+
+.problem-content h3 {
+
+    font-size: 38px;
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+
+    color: var(--azul-oscuro);
+
+}
+
+.problem-box {
+
+    margin-bottom: 25px;
+
+    padding: 20px;
+
+    background: white;
+
+    border-left: 5px solid var(--coral);
+
+    border-radius: 0 12px 12px 0;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.04);
+
+}
+
+.problem-box h4 {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+
+    color: var(--coral);
+
+}
+
+.peace {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--turquesa-claro),
+            var(--verde-claro)
+        );
+
+    border-left: 6px solid var(--verde);
+
+    border-radius: 12px;
+
+}
+
+.peace strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--verde);
+
+}
+
+
+/* =====================================================
+   POESÍA
+===================================================== */
+
+.poetry {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ede9fe,
+            #cffafe,
+            #fef3c7
+        );
+
+    text-align: center;
+
+}
+
+.poetry-content {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.poetry-content > p {
+
+    max-width: 700px;
+
+    margin: 25px auto;
+
+}
+
+.poem {
+
+    background: white;
+
+    padding: 60px 45px;
+
+    margin-top: 50px;
+
+    border-radius: 25px;
+
+    border-top: 7px solid var(--morado);
+
+    box-shadow:
+        0 25px 60px rgba(124,58,237,.15);
+
+}
+
+.poem h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+    color: var(--morado);
+
+}
+
+.poem p {
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    font-style: italic;
+
+    line-height: 2;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =====================================================
+   CONCLUSIÓN
+===================================================== */
+
+.conclusion {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--azul),
+            var(--turquesa)
+        );
+
+    text-align: center;
+
+    color: white;
+
+}
+
+.conclusion span {
+
+    color: var(--amarillo);
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+.conclusion h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(40px, 6vw, 70px);
+
+    max-width: 900px;
+
+    margin: 25px auto;
+
+    line-height: 1.1;
+
+}
+
+.conclusion p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+}
+
+
+/* =====================================================
+   FUENTES
+===================================================== */
+
+.sources {
+
+    background: #f8fafc;
+
+}
+
+.source-list {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.source-list p {
+
+    background: white;
+
+    padding: 22px 25px;
+
+    margin-bottom: 12px;
+
+    border-left: 5px solid var(--azul);
+
+    border-radius: 0 10px 10px 0;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.04);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #172554
+        );
+
+    color: white;
+
+    padding: 65px 8%;
+
+    text-align: center;
+
+}
+
+footer .logo span {
+
+    color: var(--turquesa);
+
+}
+
+footer p {
+
+    margin-top: 10px;
+
+}
+
+.copyright {
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .menu {
+
+        display: none;
+
+    }
+
+    .two-columns,
+    .history-intro,
+    .problem {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .country-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .problem.reverse {
+
+        direction: ltr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    section {
+
+        padding: 75px 6%;
+
+    }
+
+    .hero-content {
+
+        margin-top: 100px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 70px;
+
+    }
+
+    .cards,
+    .country-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .featured-image img {
+
+        height: 400px;
+
+    }
+
+    .problem-image img {
+
+        height: 350px;
+
+    }
+
+    .poem {
+
+        padding: 40px 20px;
+
+    }
+
+    .poem p {
+
+        font-size: 18px;
+
+    }
+
+}
