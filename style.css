@@ -11,7 +11,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+.hero h1 {
+    font-size: clamp(65px, 11vw, 130px);
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #252525;
