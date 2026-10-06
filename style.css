@@ -1232,52 +1232,435 @@ footer p {
 
 @media (max-width: 600px) {
 
-    section {
+    /* =========================
+       AJUSTES GENERALES CELULAR
+    ========================== */
 
-        padding: 75px 6%;
-
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
+
+    section {
+        width: 100%;
+        padding: 65px 20px;
+    }
+
+
+    /* =========================
+       PORTADA
+    ========================== */
+
+    .hero {
+        width: 100%;
+        min-height: 100svh;
+        overflow: hidden;
+
+        background-position: center;
+    }
+
+
+    /* LOGO */
+
+    .navbar {
+        width: 100%;
+        padding: 22px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 2px;
+        white-space: nowrap;
+    }
+
+
+    /* OCULTAR MENÚ */
+
+    .menu {
+        display: none;
+    }
+
+
+    /* CONTENIDO DE PORTADA */
 
     .hero-content {
 
-        margin-top: 100px;
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 100px auto 0;
+
+        padding: 20px;
+
+        text-align: center;
 
     }
+
+
+    /* ETIQUETA */
+
+    .categoria {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+
+        padding: 9px 15px;
+
+        max-width: 100%;
+
+    }
+
+
+    /* TÍTULO PRINCIPAL */
 
     .hero h1 {
 
-        font-size: 70px;
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: 52px;
+
+        line-height: 1;
+
+        margin: 25px 0;
+
+        word-break: normal;
+
+        overflow-wrap: break-word;
 
     }
 
-    .cards,
-    .country-grid {
+
+    /* TEXTO */
+
+    .hero p {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: 17px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* BOTÓN */
+
+    .btn {
+
+        padding: 13px 25px;
+
+        font-size: 14px;
+
+    }
+
+
+    /* =========================
+       DEFINICIÓN
+    ========================== */
+
+    .two-columns {
+
+        width: 100%;
 
         grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+    .lead {
+
+        font-size: 21px;
+
+    }
+
+    .quote {
+
+        padding: 35px 25px;
+
+        border-radius: 15px;
+
+    }
+
+    .quote blockquote {
+
+        font-size: 25px;
+
+    }
+
+
+    /* =========================
+       IMÁGENES
+    ========================== */
+
+    .featured-image {
+
+        width: 100%;
+
+        overflow: hidden;
 
     }
 
     .featured-image img {
 
-        height: 400px;
+        width: 100%;
+
+        height: 350px;
+
+        object-fit: cover;
+
+    }
+
+
+    /* =========================
+       TÍTULOS
+    ========================== */
+
+    .section-title {
+
+        width: 100%;
+
+        margin-bottom: 45px;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 38px;
+
+        overflow-wrap: break-word;
+
+    }
+
+
+    /* =========================
+       CARACTERÍSTICAS
+    ========================== */
+
+    .cards {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+    .card {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 30px;
+
+    }
+
+
+    /* =========================
+       PAÍSES
+    ========================== */
+
+    .country-grid {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+    .country {
+
+        width: 100%;
+
+    }
+
+    .country img {
+
+        height: 220px;
+
+    }
+
+
+    /* =========================
+       HISTORIA
+    ========================== */
+
+    .history-intro {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+    .history-intro img {
+
+        width: 100%;
+
+        height: 300px;
+
+    }
+
+    .timeline {
+
+        width: 100%;
+
+    }
+
+    .timeline-item {
+
+        padding-left: 30px;
+
+    }
+
+    .timeline-item h3 {
+
+        font-size: 25px;
+
+    }
+
+
+    /* =========================
+       PROBLEMÁTICAS
+    ========================== */
+
+    .problem {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 70px;
+
+    }
+
+    .problem.reverse {
+
+        direction: ltr;
+
+    }
+
+    .problem-image {
+
+        width: 100%;
 
     }
 
     .problem-image img {
 
-        height: 350px;
+        width: 100%;
+
+        height: 300px;
+
+    }
+
+    .problem-content {
+
+        width: 100%;
+
+    }
+
+    .problem-content h3 {
+
+        font-size: 31px;
+
+    }
+
+
+    /* =========================
+       POESÍA
+    ========================== */
+
+    .poetry-content {
+
+        width: 100%;
 
     }
 
     .poem {
 
-        padding: 40px 20px;
+        width: 100%;
+
+        padding: 35px 20px;
+
+        border-radius: 18px;
+
+    }
+
+    .poem h3 {
+
+        font-size: 28px;
 
     }
 
     .poem p {
 
-        font-size: 18px;
+        font-size: 17px;
+
+        line-height: 1.9;
+
+    }
+
+
+    /* =========================
+       CONCLUSIÓN
+    ========================== */
+
+    .conclusion h2 {
+
+        font-size: 42px;
+
+    }
+
+    .conclusion p {
+
+        font-size: 16px;
+
+    }
+
+
+    /* =========================
+       FUENTES
+    ========================== */
+
+    .source-list {
+
+        width: 100%;
+
+    }
+
+    .source-list p {
+
+        padding: 18px;
+
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+
+        width: 100%;
+
+        padding: 50px 20px;
 
     }
 
