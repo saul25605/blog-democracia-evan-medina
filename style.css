@@ -18,6 +18,16 @@ body {
     background: #f7f8fc;
     line-height: 1.7;
 }
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
 
 
 /* =====================================================
